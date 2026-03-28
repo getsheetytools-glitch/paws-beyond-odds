@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: Conditions
+description: Cat health conditions covered on Paws Over Odds — from CKD to diabetes, cancer, hyperthyroidism, FIV, and mystery illness.
+pageClass: conditions-index
+---
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">By condition</div>
+    <h1>Find your cat's situation</h1>
+    <p>Every condition here has been lived with by one of our cats. This isn't textbook information — it's hard-won knowledge from the exam table, the 2am panic, and the trial and error.</p>
+  </div>
+</div>
+
+<section class="conditions-section">
+  <div class="conditions-inner">
+
+    {% for condition in conditions %}
+      {% if condition.featured %}
+      <a href="/conditions/{{ condition.slug }}/" class="condition-card condition-featured">
+        <span class="cond-icon">{{ condition.icon }}</span>
+        <div class="cond-body">
+          <div class="cond-kicker">Most comprehensive section</div>
+          <h2 class="cond-name">{{ condition.name }}</h2>
+          <p class="cond-tagline">{{ condition.tagline }}</p>
+          <p class="cond-desc">{{ condition.description }}</p>
+          {% if condition.relatedCats %}
+          <div class="cond-cats">
+            {% for catName in condition.relatedCats %}
+            <span class="cond-cat-chip">{{ catName }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+          <span class="cond-link">Explore {{ condition.shortName }} →</span>
+        </div>
+      </a>
+      {% endif %}
+    {% endfor %}
+
+    <div class="conditions-grid">
+      {% for condition in conditions %}
+        {% if not condition.featured %}
+        <a href="/conditions/{{ condition.slug }}/" class="condition-card">
+          <span class="cond-icon">{{ condition.icon }}</span>
+          <h3 class="cond-name">{{ condition.name }}</h3>
+          <p class="cond-tagline">{{ condition.tagline }}</p>
+          {% if condition.relatedCats %}
+          <div class="cond-cats">
+            {% for catName in condition.relatedCats %}
+            <span class="cond-cat-chip">{{ catName }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+          <span class="cond-link">Explore →</span>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<section class="conditions-advocate-cta">
+  <div class="cta-inner">
+    <div class="cta-icon">💬</div>
+    <div>
+      <h2>Don't know what's wrong yet?</h2>
+      <p>If your cat is declining and you don't have a clear diagnosis, start with the vet advocacy toolkit — it's built for exactly that situation.</p>
+      <a href="/advocate/" class="btn btn-outline">Go to the Vet Toolkit →</a>
+    </div>
+  </div>
+</section>

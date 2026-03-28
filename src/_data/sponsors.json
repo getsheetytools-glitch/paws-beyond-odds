@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Example Brand",
+    "slug": "example-brand",
+    "logo": "/assets/images/sponsors/example.png",
+    "category": "food",
+    "tagline": "Placeholder — add your first sponsor here",
+    "description": "Replace this entry with a real partner. Each sponsor gets a card with their logo, a description, and a discount code.",
+    "code": "PAWSOVER10",
+    "discount": "10% off",
+    "url": "#",
+    "endorsed": true,
+    "endorsement": "Add a personal note about why you recommend this product.",
+    "conditions": ["ckd"]
+  }
+]

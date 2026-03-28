@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Minou",
+    "slug": "minou",
+    "status": "passed",
+    "role": "The Beginning",
+    "subtitle": "The one who made me a cat mom",
+    "emoji": "🐱",
+    "photo": "/assets/images/cats/minou.svg",
+    "conditions": [
+      { "label": "Diabetes", "type": "diabetes" },
+      { "label": "Senior", "type": "general" }
+    ],
+    "story": [
+      "A little old girl with diabetes who gave me the title of cat mom. Without Minou, none of this exists — no Bruce, no Artie, no Milton and Sorbet. She was the beginning of everything.",
+      "Managing a diabetic cat is a crash course in paying attention, in learning to read a body that can't tell you what it needs. She gave me that education, and I didn't fully understand what she was teaching me until much later."
+    ],
+    "lesson": "Becoming a cat mom means becoming an advocate. The moment you take on a cat with a chronic condition, you become part of their medical team — whether anyone tells you that or not."
+  },
+  {
+    "name": "Yams",
+    "slug": "yams",
+    "status": "passed",
+    "role": "The Sweet One",
+    "subtitle": "Adopted into complexity",
+    "emoji": "🟠",
+    "photo": "/assets/images/cats/yams.svg",
+    "conditions": [
+      { "label": "Adopted with issues", "type": "general" },
+      { "label": "Rapid decline", "type": "mystery" },
+      { "label": "Possible sepsis", "type": "mystery" }
+    ],
+    "story": [
+      "My first orange boy. Such a sweetie, and he came to us already carrying health issues. The cruelty of Yams's story was the timeline — he declined incredibly quickly, what seemed to be sepsis taking him before we could fight back.",
+      "When a cat comes to you already fragile, the system often isn't built for them. The urgency is different. The decisions are faster. The window is smaller."
+    ],
+    "lesson": "Adopted cats with pre-existing conditions deserve the same aggressive advocacy as any other cat. When the window is small, you need to know what questions to ask — and ask them immediately."
+  },
+  {
+    "name": "Murphy",
+    "slug": "murphy",
+    "status": "passed",
+    "role": "The Fighter",
+    "subtitle": "Our tripod girl",
+    "emoji": "🐾",
+    "photo": "/assets/images/cats/murphy.svg",
+    "conditions": [
+      { "label": "Breast cancer", "type": "cancer" },
+      { "label": "Tripod", "type": "general" },
+      { "label": "Chemotherapy", "type": "general" }
+    ],
+    "story": [
+      "Our adopted tripod girl. Murphy fought on three legs and never slowed down — until breast cancer. We went through chemotherapy with her. It didn't help. She is the hardest lesson this site carries: sometimes you do everything right and it still isn't enough.",
+      "Murphy taught us that the goal was never to win every fight. It was to make sure every fight was worth fighting — and that the life in between the battles was full and warm and hers."
+    ],
+    "lesson": "Knowing when to fight and knowing when to change the goal — from cure to comfort, from treatment to quality — is the hardest and most important skill a cat parent can develop."
+  },
+  {
+    "name": "Artie",
+    "slug": "artie",
+    "status": "passed",
+    "role": "The Mystery",
+    "subtitle": "The one the system couldn't answer for",
+    "emoji": "🟠",
+    "photo": "/assets/images/cats/artie.svg",
+    "conditions": [
+      { "label": "FIV+", "type": "fiv" },
+      { "label": "Hyperthyroid", "type": "hyper" },
+      { "label": "Asthma", "type": "asthma" },
+      { "label": "Neurological symptoms", "type": "neuro" },
+      { "label": "Never diagnosed", "type": "mystery" }
+    ],
+    "story": [
+      "My second orange boy. Artie had FIV, hyperthyroidism, and asthma — a complex baseline. Then came neurological symptoms and a dropping body temperature. FIP negative. No cancer detected on cytology. And yet he declined.",
+      "The answer never came. We lost him without knowing why. That experience — the gap, the shrug, the unanswered question — is a large part of why this site exists. Artie represents every cat whose owner is told 'we're not sure' and sent home with nothing."
+    ],
+    "lesson": "The undiagnosed cat is one of the loneliest experiences in pet ownership. You deserve a community, a framework, and a set of questions to bring back to your vet — even when the answers aren't clear."
+  },
+  {
+    "name": "Bruce",
+    "slug": "bruce",
+    "status": "passed",
+    "role": "The Teacher",
+    "subtitle": "Who this site is named for",
+    "emoji": "🐈‍⬛",
+    "photo": "/assets/images/cats/bruce.svg",
+    "conditions": [
+      { "label": "CKD — managed 2–3 years", "type": "ckd" }
+    ],
+    "story": [
+      "Bruce was our greatest teacher. For two to three years we managed her CKD through trial and error, vet friction, and a slow accumulation of hard-won knowledge. She showed us that the official guidance often isn't the whole story.",
+      "Through Bruce, we learned to push back. To ask a second time when the first answer wasn't enough. To prioritize her happiness over perfectly regulated numbers. To treat her as a whole cat, not a set of lab results."
+    ],
+    "lesson": "Managing CKD is not about chasing perfect bloodwork. It's about keeping your cat comfortable, engaged, and eating — even when that means making choices your vet didn't suggest."
+  },
+  {
+    "name": "Milton",
+    "slug": "milton",
+    "status": "living",
+    "role": "The Living Proof",
+    "subtitle": "Early intervention, on our terms",
+    "emoji": "🐈",
+    "photo": "/assets/images/cats/milton.svg",
+    "conditions": [
+      { "label": "CKD — early stage", "type": "ckd" }
+    ],
+    "story": [
+      "Milton is everything we learned from Bruce, applied early. Managing his CKD proactively — before a crisis, not in response to one. The emphasis is on quality of life, not perfect numbers.",
+      "His ongoing care is documented in the Milton & Sorbet updates section. The wins, the experiments, the setbacks, and the small daily choices that add up to a good life."
+    ],
+    "lesson": "Early intervention changes everything. The sooner you start asking questions, the more options you have — and the more time you buy."
+  },
+  {
+    "name": "Sorbet",
+    "slug": "sorbet",
+    "status": "living",
+    "role": "The Experiment",
+    "subtitle": "What changes before a crisis begins?",
+    "emoji": "🍧",
+    "photo": "/assets/images/cats/sorbet.svg",
+    "conditions": [
+      { "label": "CKD — early stage", "type": "ckd" }
+    ],
+    "story": [
+      "Sorbet is the question made real: what happens when you catch kidney disease early and manage it from day one with intention? No panic. No crisis. Just careful, informed, love-driven care.",
+      "Like Milton, his story is ongoing. We're figuring it out as we go — and documenting all of it."
+    ],
+    "lesson": "The early-stage CKD cat is an opportunity, not a sentence. What you do before things get bad matters enormously."
+  }
+]

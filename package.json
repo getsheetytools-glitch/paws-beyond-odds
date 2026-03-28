@@ -1,0 +1,12 @@
+{
+  "name": "paws-over-odds",
+  "version": "1.0.0",
+  "description": "Paws Over Odds — Cat health advocacy resource",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

@@ -1,0 +1,33 @@
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-mark" aria-hidden="true">🐾</div>
+      <span class="nav-logo-text">Paws <em>Over</em> Odds</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/our-cats/">Our Cats</a></li>
+      <li><a href="/conditions/">Conditions</a></li>
+      <li><a href="/advocate/">Vet Toolkit</a></li>
+      <li><a href="/milton-sorbet/">Milton & Sorbet</a></li>
+      <li><a href="/promotions/" class="nav-promos">Deals & Codes</a></li>
+      <li><a href="/conditions/ckd/" class="nav-cta">Start with CKD</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('is-open');
+    });
+  }
+</script>

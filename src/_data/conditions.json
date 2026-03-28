@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "ckd",
+    "name": "Chronic Kidney Disease",
+    "shortName": "CKD",
+    "icon": "🫘",
+    "featured": true,
+    "tagline": "Our most comprehensive section, built from years of real experience.",
+    "description": "From diagnosis through IRIS staging, diet, fluids, phosphorus management, and quality of life. Built from years managing Bruce's CKD and now Milton and Sorbet's early-stage disease.",
+    "relatedCats": ["Bruce", "Milton", "Sorbet"]
+  },
+  {
+    "slug": "diabetes",
+    "name": "Diabetes",
+    "shortName": "Diabetes",
+    "icon": "🩸",
+    "featured": false,
+    "tagline": "Where Minou's story begins.",
+    "description": "Managing blood sugar, insulin dosing, diet, and the day-to-day reality of a diabetic cat.",
+    "relatedCats": ["Minou"]
+  },
+  {
+    "slug": "hyperthyroidism",
+    "name": "Hyperthyroidism",
+    "shortName": "Hyperthyroid",
+    "icon": "🦋",
+    "featured": false,
+    "tagline": "Common in senior cats. Often overlapping with CKD.",
+    "description": "Overactive thyroid is one of the most common senior cat conditions — and its interaction with kidney disease is frequently misunderstood.",
+    "relatedCats": ["Artie"]
+  },
+  {
+    "slug": "cancer",
+    "name": "Cancer",
+    "shortName": "Cancer",
+    "icon": "🎗️",
+    "featured": false,
+    "tagline": "Murphy's story. The hardest chapter.",
+    "description": "From diagnosis to treatment decisions to the hardest conversations. Covers mammary cancer, lymphoma, cytology, chemotherapy, and quality-of-life decision frameworks.",
+    "relatedCats": ["Murphy"]
+  },
+  {
+    "slug": "asthma",
+    "name": "Asthma & Respiratory",
+    "shortName": "Asthma",
+    "icon": "🌬️",
+    "featured": false,
+    "tagline": "Managing chronic respiratory conditions alongside other diagnoses.",
+    "description": "Feline asthma, inhalers, triggers, and how respiratory disease interacts with other chronic conditions.",
+    "relatedCats": ["Artie"]
+  },
+  {
+    "slug": "fiv",
+    "name": "FIV & FeLV",
+    "shortName": "FIV/FeLV",
+    "icon": "🧬",
+    "featured": false,
+    "tagline": "Better prognosis than most people think.",
+    "description": "Retroviral infections — what a positive diagnosis actually means for your cat's life expectancy, and how to manage it alongside other conditions.",
+    "relatedCats": ["Artie"]
+  },
+  {
+    "slug": "neurological",
+    "name": "Neurological & Mystery Illness",
+    "shortName": "Neuro & Mystery",
+    "icon": "🧠",
+    "featured": false,
+    "tagline": "For the undiagnosed cat. For Artie.",
+    "description": "Overlapping conditions, unexplained decline, and how to keep advocating when the tests come back negative. This section exists because of Artie.",
+    "relatedCats": ["Artie"]
+  },
+  {
+    "slug": "multi-condition",
+    "name": "Multi-Condition & Complex Cases",
+    "shortName": "Complex Cases",
+    "icon": "📋",
+    "featured": false,
+    "tagline": "When nobody has the full picture.",
+    "description": "When your cat has two, three, or four overlapping diagnoses and the specialists aren't talking to each other.",
+    "relatedCats": ["Artie", "Minou"]
+  }
+]

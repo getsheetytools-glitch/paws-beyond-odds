@@ -1,0 +1,69 @@
+---
+layout: base.njk
+title: Our Cats
+description: Six cats, every major condition, and the full story of how Paws Over Odds came to exist.
+pageClass: our-cats
+---
+
+<div class="page-hero page-hero--forest">
+  <div class="page-hero-inner">
+    <div class="eyebrow">The ones who made this</div>
+    <h1>Six cats. A lifetime of <em>lessons.</em></h1>
+    <p>Every condition covered on this site was lived through by one of these cats. This is their story — and the reason this resource exists.</p>
+  </div>
+</div>
+
+<section class="cats-section">
+  <div class="cats-inner">
+    <div class="cats-timeline">
+
+      {% for cat in cats %}
+      <div class="cat-entry cat-{{ cat.status }}" id="{{ cat.slug }}">
+
+        <div class="cat-photo-col">
+          <img src="{{ cat.photo }}" alt="{{ cat.name }}" class="cat-photo" loading="lazy">
+          <span class="cat-status-badge badge-{{ cat.status }}">
+            {% if cat.status == 'living' %}Living with CKD{% else %}In memory{% endif %}
+          </span>
+        </div>
+
+        <div class="cat-body">
+          <div class="cat-role">{{ cat.role }}</div>
+          <h2 class="cat-name">{{ cat.name }}</h2>
+          <p class="cat-subtitle">{{ cat.subtitle }}</p>
+
+          <div class="cat-tags">
+            {% for condition in cat.conditions %}
+            <span class="cat-tag tag-{{ condition.type }}">{{ condition.label }}</span>
+            {% endfor %}
+          </div>
+
+          <div class="cat-story">
+            {% for paragraph in cat.story %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+          </div>
+
+          <blockquote class="cat-lesson">
+            <strong>What {{ cat.name }} taught us</strong>
+            {{ cat.lesson }}
+          </blockquote>
+        </div>
+
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+<section class="cats-cta">
+  <div class="cta-inner">
+    <h2>Their stories are why this resource exists.</h2>
+    <p>If you're here because your cat is sick, you're in the right place. Start with the condition that brought you here.</p>
+    <div class="cta-actions">
+      <a href="/conditions/" class="btn btn-primary">Browse All Conditions</a>
+      <a href="/advocate/" class="btn btn-outline">Vet Advocacy Toolkit</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <rect width="600" height="800" fill="#2c4a3e"/>
+  <rect x="2" y="2" width="596" height="796" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-dasharray="12 6"/>
+  <text x="300" y="350" font-family="Georgia, serif" font-size="90" text-anchor="middle">🐾</text>
+  <text x="300" y="440" font-family="Georgia, serif" font-size="26" font-weight="bold" text-anchor="middle" fill="rgba(255,255,255,0.55)">Your cats go here</text>
+  <text x="300" y="476" font-family="Georgia, serif" font-size="17" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-style="italic">replace hero.svg with a real photo</text>
+</svg>

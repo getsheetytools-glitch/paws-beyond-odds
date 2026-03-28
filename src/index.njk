@@ -1,0 +1,98 @@
+---
+layout: base.njk
+pageClass: home
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="eyebrow">Cat Health Advocacy</div>
+      <h1>Your cat deserves more than <em>a prognosis.</em></h1>
+      <p class="hero-symbol">🐾 &gt; odds</p>
+      <p class="hero-sub">A resource built from six cats' worth of real experience — the ones we lost, the ones we're still fighting for, and everything we learned along the way.</p>
+      <div class="hero-actions">
+        <a href="/conditions/ckd/" class="btn btn-primary">💙 New CKD Diagnosis? Start Here</a>
+        <a href="/our-cats/" class="btn btn-outline">Meet Our Cats</a>
+      </div>
+
+      <div class="hero-cats-strip" aria-label="Our cats">
+        {% for cat in cats %}
+        <a href="/our-cats/#{{ cat.slug }}" class="cat-chip {% if cat.status == 'passed' %}chip-passed{% else %}chip-living{% endif %}">
+          <span class="chip-emoji" aria-hidden="true">{{ cat.emoji }}</span>
+          <span class="chip-name">{{ cat.name }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+      <div class="hero-photo">
+      <div class="photo-frame">
+        <img src="/assets/images/hero.svg" alt="Our cats" style="width:100%;height:100%;object-fit:cover;border-radius:20px;">
+        <div class="photo-caption">
+          <strong>Six cats. A lifetime of lessons.</strong>
+          Everything on this site came from loving them.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission-strip">
+  <div class="mission-inner">
+    <p>"We spent years learning to push back, ask better questions, and prioritize <strong>happiness over perfect lab numbers.</strong> We built this so you don't have to learn it the hard way."</p>
+  </div>
+</section>
+
+<!-- SECTION TILES -->
+<section class="home-tiles">
+  <div class="tiles-inner">
+
+    <div class="tile tile-featured">
+      <div class="tile-icon">🫘</div>
+      <div class="tile-body">
+        <div class="tile-kicker">Most visited</div>
+        <h2 class="tile-title">Chronic Kidney Disease</h2>
+        <p class="tile-desc">Our most comprehensive section. Diagnosis, staging, diet, fluids, and how to advocate for quality of life over perfect numbers. Built from years managing Bruce's CKD.</p>
+        <a href="/conditions/ckd/" class="tile-link">Explore CKD →</a>
+      </div>
+    </div>
+
+    <a href="/our-cats/" class="tile tile-link-card">
+      <div class="tile-icon">🐾</div>
+      <h3 class="tile-title">Our Cats</h3>
+      <p class="tile-desc">Six cats. Every major condition. The whole story of how this site came to exist.</p>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="/conditions/" class="tile tile-link-card">
+      <div class="tile-icon">📋</div>
+      <h3 class="tile-title">All Conditions</h3>
+      <p class="tile-desc">CKD, diabetes, cancer, hyperthyroidism, FIV, neurological, and more.</p>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="/advocate/" class="tile tile-link-card">
+      <div class="tile-icon">💬</div>
+      <h3 class="tile-title">Vet Toolkit</h3>
+      <p class="tile-desc">Questions to ask. When to push back. How to read your own lab results.</p>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="/milton-sorbet/" class="tile tile-link-card tile-living">
+      <div class="tile-icon">✨</div>
+      <h3 class="tile-title">Milton & Sorbet</h3>
+      <p class="tile-desc">Two CKD cats, managed proactively from day one. The ongoing story.</p>
+      <span class="tile-arrow">→</span>
+    </a>
+
+    <a href="/promotions/" class="tile tile-link-card tile-promos">
+      <div class="tile-icon">🏷️</div>
+      <h3 class="tile-title">Deals & Discount Codes</h3>
+      <p class="tile-desc">Vetted products and services we actually use — with exclusive discount codes.</p>
+      <span class="tile-arrow">→</span>
+    </a>
+
+  </div>
+</section>

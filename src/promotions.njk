@@ -1,0 +1,127 @@
+---
+layout: base.njk
+title: Deals & Discount Codes
+description: Vetted products and services we actually use — with exclusive discount codes for the Paws Over Odds community.
+pageClass: promotions
+---
+
+<div class="page-hero page-hero--amber">
+  <div class="page-hero-inner">
+    <div class="eyebrow">Community deals</div>
+    <h1>Products we actually <em>use and trust</em></h1>
+    <p>Every product listed here is something we've used or researched carefully. We only partner with brands whose products we'd recommend regardless of sponsorship. If we have a discount code for you, it means we've vetted it first.</p>
+  </div>
+</div>
+
+<section class="promos-transparency">
+  <div class="transparency-inner">
+    <div class="transparency-icon">📋</div>
+    <div>
+      <h2>How this page works</h2>
+      <p>Some of these partnerships earn us a small commission or flat fee. That income helps keep the rest of this site free, ad-free, and maintained. We will always disclose when a listing is sponsored, and we will never list a product we don't stand behind. If you have a question about any listing, <a href="/about/">reach out</a>.</p>
+    </div>
+  </div>
+</section>
+
+{% if sponsors.length > 1 %}
+
+  {# Group by category #}
+  {% set categories = {
+    "food": "Food & Diet",
+    "supplements": "Supplements",
+    "equipment": "Equipment & Supplies",
+    "services": "Services",
+    "other": "Other"
+  } %}
+
+  {% for categoryKey, categoryLabel in categories %}
+    {% set catSponsors = [] %}
+    {% for sponsor in sponsors %}
+      {% if sponsor.category == categoryKey %}
+        {% set catSponsors = (catSponsors.push(sponsor), catSponsors) %}
+      {% endif %}
+    {% endfor %}
+
+    {% if catSponsors.length > 0 %}
+    <section class="promos-category">
+      <div class="promos-inner">
+        <h2 class="promos-category-title">{{ categoryLabel }}</h2>
+        <div class="promos-grid">
+          {% for sponsor in sponsors %}
+          {% if sponsor.category == categoryKey %}
+          <div class="promo-card {% if sponsor.endorsed %}promo-endorsed{% endif %}">
+            <div class="promo-header">
+              {% if sponsor.logo %}
+              <img src="{{ sponsor.logo }}" alt="{{ sponsor.name }} logo" class="promo-logo">
+              {% else %}
+              <div class="promo-logo-placeholder">{{ sponsor.name }}</div>
+              {% endif %}
+              {% if sponsor.endorsed %}
+              <span class="promo-badge">✓ We use this</span>
+              {% endif %}
+            </div>
+
+            <div class="promo-body">
+              <h3 class="promo-name">{{ sponsor.name }}</h3>
+              <p class="promo-tagline">{{ sponsor.tagline }}</p>
+              <p class="promo-desc">{{ sponsor.description }}</p>
+
+              {% if sponsor.endorsement %}
+              <blockquote class="promo-endorsement">{{ sponsor.endorsement }}</blockquote>
+              {% endif %}
+
+              {% if sponsor.conditions %}
+              <div class="promo-conditions">
+                {% for condition in sponsor.conditions %}
+                <a href="/conditions/{{ condition }}/" class="promo-condition-chip">{{ condition | upper }}</a>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="promo-footer">
+              {% if sponsor.code %}
+              <div class="promo-code-block">
+                <span class="promo-code-label">Your discount code</span>
+                <button class="promo-code" onclick="navigator.clipboard.writeText('{{ sponsor.code }}'); this.textContent = 'Copied!';" title="Click to copy">
+                  {{ sponsor.code }}
+                </button>
+                <span class="promo-discount">{{ sponsor.discount }}</span>
+              </div>
+              {% endif %}
+              <a href="{{ sponsor.url }}" class="btn btn-primary btn-sm" target="_blank" rel="noopener sponsored">
+                Visit {{ sponsor.name }} →
+              </a>
+              <p class="promo-disclosure">Sponsored listing</p>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+  {% endfor %}
+
+{% else %}
+
+<section class="promos-empty">
+  <div class="promos-empty-inner">
+    <span class="promos-empty-icon">🏷️</span>
+    <h2>Deals and codes coming soon</h2>
+    <p>We're building this out carefully — only listing products and services we'd actually recommend. Check back soon, or <a href="/about/">get in touch</a> if you're a brand interested in partnering.</p>
+    <div class="promos-promise">
+      <strong>Our promise:</strong> Every listing on this page will be something we've used or researched. No pay-to-play. No mystery partnerships. If it's here, it's because we think it genuinely helps cat owners.
+    </div>
+  </div>
+</section>
+
+{% endif %}
+
+<section class="promos-partner-cta">
+  <div class="partner-inner">
+    <h2>Are you a pet health brand?</h2>
+    <p>We work with brands whose products are genuinely useful to cat owners managing chronic illness. If that's you, reach out — we're selective and we keep it honest.</p>
+    <a href="mailto:hello@pawsoverodds.com" class="btn btn-outline">Get in touch →</a>
+  </div>
+</section>

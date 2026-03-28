@@ -1,0 +1,64 @@
+---
+layout: base.njk
+title: About Paws Over Odds
+description: Why this site exists, who built it, and the six cats who made it necessary.
+pageClass: about
+---
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">Our story</div>
+    <h1>Why <em>Paws Over Odds</em> exists</h1>
+  </div>
+</div>
+
+<section class="about-section">
+  <div class="about-inner">
+
+    <div class="about-body">
+
+      <p class="about-lead">This site exists because of six cats — Minou, Yams, Murphy, Artie, Bruce, and now Milton and Sorbet — and because of everything we had to figure out the hard way.</p>
+
+      <p>I became a cat mom with Minou, a little old diabetic girl who taught me that managing a sick cat means becoming part of their medical team whether you're ready for it or not. Yams came to us already fragile and left too quickly. Murphy fought cancer on three legs with everything she had. Artie had FIV, hyperthyroidism, asthma — and then a neurological decline that the vets never explained. He died without a diagnosis.</p>
+
+      <p>Bruce was the one who changed how I think about all of it. For two to three years, I managed her CKD through trial and error, through frustrated vet appointments, through learning to push back when the guidance didn't match what I was seeing. She taught me to prioritise her happiness over her lab numbers. She taught me what real advocacy looks like.</p>
+
+      <p>Now I have Milton and Sorbet, both with early-stage kidney disease. And this time, I'm doing it differently — with everything Bruce taught me, applied early, documented openly.</p>
+
+      <h2>What this site is</h2>
+      <p>Paws Over Odds is a cat health advocacy resource. Not a replacement for your vet. Not a medical authority. A place to find the questions you should be asking, the information that helps you have better conversations, and the community of people who've been through what you're going through.</p>
+
+      <p>The philosophy is simple: your cat deserves more than a prognosis. Quality of life matters as much as lab values. And sometimes the most important thing you can do is ask again when the first answer isn't enough.</p>
+
+      <h2>What this site is not</h2>
+      <ul>
+        <li>It is not a substitute for veterinary care. Please keep seeing your vet.</li>
+        <li>It is not selling you anything (except on the <a href="/promotions/">promotions page</a>, which is clearly disclosed).</li>
+        <li>It does not have a miracle cure.</li>
+        <li>It is not always right — I am not a vet. Everything here is personal experience and research, offered in good faith.</li>
+      </ul>
+
+      <h2>Get in touch</h2>
+      <p>If you have a question, a story, or a product you think belongs on this site, reach out.</p>
+      <a href="mailto:hello@pawsoverodds.com" class="btn btn-primary">hello@pawsoverodds.com</a>
+
+    </div>
+
+    <aside class="about-cats-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Our cats</div>
+        {% for cat in cats %}
+        <a href="/our-cats/#{{ cat.slug }}" class="about-cat-row">
+          <span class="about-cat-emoji">{{ cat.emoji }}</span>
+          <div>
+            <strong>{{ cat.name }}</strong>
+            <span>{{ cat.role }}</span>
+          </div>
+          {% if cat.status == 'living' %}<span class="living-dot" aria-label="Still with us"></span>{% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </aside>
+
+  </div>
+</section>

@@ -1,0 +1,43 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">🐾 Paws Over Odds</div>
+        <p class="footer-tagline">{{ site.description }}</p>
+        <div class="footer-memory">
+          <span class="memory-label">In loving memory</span>
+          <span class="memory-names">Minou &middot; Yams &middot; Murphy &middot; Artie &middot; Bruce</span>
+          <em>You taught us everything. We're still learning.</em>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Conditions</div>
+        <ul>
+          {% for condition in conditions %}
+          <li><a href="/conditions/{{ condition.slug }}/">{{ condition.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul>
+          <li><a href="/conditions/ckd/">New CKD Diagnosis</a></li>
+          <li><a href="/advocate/">Vet Advocacy Toolkit</a></li>
+          <li><a href="/milton-sorbet/">Milton & Sorbet Updates</a></li>
+          <li><a href="/our-cats/">Our Cats</a></li>
+          <li><a href="/promotions/">Deals & Discount Codes</a></li>
+          <li><a href="/about/">About This Site</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Built with love. No ads. No false promises. Just everything we know.</p>
+      <div class="footer-symbol">🐾 <strong>&gt;</strong> odds</div>
+    </div>
+  </div>
+</footer>
