@@ -39,6 +39,7 @@ jobs:
         run: npm run build
         env:
           PLAUSIBLE_DOMAIN: ${{ secrets.PLAUSIBLE_DOMAIN }}
+          ELEVENTY_PATH_PREFIX: /paws-over-odds/
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
