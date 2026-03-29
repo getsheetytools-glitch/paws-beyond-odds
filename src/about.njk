@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: About Paws Beyond Odds
-description: Why this site exists, who built it, and the six cats who made it necessary.
+description: Why this site exists, who built it, and the seven cats who made it necessary.
 pageClass: about
 ---
 
@@ -17,30 +17,35 @@ pageClass: about
 
     <div class="about-body">
 
-      <p class="about-lead">This site exists because of six cats — Minou, Yams, Murphy, Artie, Bruce, and now Milton and Sorbet — and because of everything we had to figure out the hard way.</p>
+      <p class="about-lead">This site exists because of seven cats — Minou, Bruce, Murphy, Milton, Yams, Artie, and Sorbet — and because of everything I had to figure out the hard way, one loss at a time.</p>
 
-      <p>I became a cat mom with Minou, a little old diabetic girl who taught me that managing a sick cat means becoming part of their medical team whether you're ready for it or not. Yams came to us already fragile and left too quickly. Murphy fought cancer on three legs with everything she had. Artie had FIV, hyperthyroidism, asthma — and then a neurological decline that the vets never explained. He died without a diagnosis.</p>
+      <p>It started with Minou, my little old diabetic girl who had both diabetes and CKD. She made me a cat mom, and she made me an advocate — because managing a cat with two chronic conditions means becoming part of their medical team whether anyone prepares you for that or not. She passed away in my sister's arms. That image has stayed with me.</p>
 
-      <p>Bruce was the one who changed how I think about all of it. For two to three years, I managed her CKD through trial and error, through frustrated vet appointments, through learning to push back when the guidance didn't match what I was seeing. She taught me to prioritise her happiness over her lab numbers. She taught me what real advocacy looks like.</p>
+      <p>Then came Yams, my first orange boy — adopted already fragile, with CKD, stomatitis, dehydration, and hypertension stacking on top of each other. The emergency vet recommended euthanasia. We hadn't had enough time to fight. That experience is part of why this site covers emergency situations and the hardest vet conversations, not just chronic management.</p>
 
-      <p>Now I have Milton and Sorbet, both with early-stage kidney disease. And this time, I'm doing it differently — with everything Bruce taught me, applied early, documented openly.</p>
+      <p>Murphy was our tripod girl — adopted, full of life, fought on three legs without slowing down. She had a brief period of hyperthyroidism before the harder diagnosis: breast cancer. We went through chemotherapy with her. When it stopped working, her vet recommended we stop too. Knowing when to change the goal — from fighting to comfort — is its own kind of wisdom, and Murphy taught it to us.</p>
+
+      <p>Then Artie. My second orange boy, FIV positive, hyperthyroid, asthmatic — we had planned radioactive iodine treatment. Then neurological symptoms appeared, and a dropping body temperature, and tests that came back negative or inconclusive. FIP negative. No cancer on cytology. The answer never came. We made the sad choice to let him go at the vet as his decline accelerated without explanation. The gap that left — the unanswered question, the feeling of failing a cat because you couldn't find what was wrong — is a large part of why this site exists.</p>
+
+      <p>Bruce was the one who changed how I think about all of it. For two to three years I managed her CKD through trial and error, through frustrated vet appointments, through slowly learning that the official guidance often wasn't the whole story. She taught me to push back, to prioritise her happiness over her lab numbers, to treat her as a whole cat rather than a set of results. She passed at home, after a planned home euthanasia — the most loving ending we could give her. This site is built for her.</p>
+
+      <p>And now Milton and Sorbet, both living with early-stage kidney disease. Milton also has arthritis, a history of orthopedic surgery after rupturing his wrist tendons, and is significantly overweight — a complex picture where every decision affects something else. Sorbet is FIV positive, hypertensive, and hyperthyroid, and currently struggling with limited appetite despite thyroid numbers that look controlled. Their ongoing care is documented in the <a href="{{ '/milton-sorbet/' | url }}">Milton &amp; Sorbet section</a>.</p>
 
       <h2>What this site is</h2>
-      <p>Paws Beyond Odds is a cat health advocacy resource. Not a replacement for your vet. Not a medical authority. A place to find the questions you should be asking, the information that helps you have better conversations, and the community of people who've been through what you're going through.</p>
-
+      <p>Paws Beyond Odds is a cat health advocacy resource. Not a replacement for your vet. Not a medical authority. A place to find the questions you should be asking, the information that helps you have better conversations, and something of the community of people who've been through what you're going through.</p>
+      <p>My experience is based in the US and Canada. Medication names, availability, and standard-of-care practices vary in other regions — I've tried to flag this where it matters, but always verify with your own vet.</p>
       <p>The philosophy is simple: your cat deserves more than a prognosis. Quality of life matters as much as lab values. And sometimes the most important thing you can do is ask again when the first answer isn't enough.</p>
 
       <h2>What this site is not</h2>
       <ul>
-        <li>It is not a substitute for veterinary care. Please keep seeing your vet.</li>
-        <li>It is not selling you anything (except on the <a href="{{ '/promotions/' | url }}">promotions page</a>, which is clearly disclosed).</li>
-        <li>It does not have a miracle cure.</li>
-        <li>It is not always right — I am not a vet. Everything here is personal experience and research, offered in good faith.</li>
+        <li>A substitute for veterinary care. Please keep seeing your vet.</li>
+        <li>Medical advice. I am not a vet. Everything here is personal experience and research, shared in good faith.</li>
+        <li>Selling you anything — except on the <a href="{{ '/promotions/' | url }}">promotions page</a>, which is clearly disclosed.</li>
+        <li>Always right. I've been wrong, I've been surprised, I've learned things late. This site reflects what I know now.</li>
       </ul>
 
       <h2>Get in touch</h2>
-      <p>If you have a question, a story, or a product you think belongs on this site, reach out.</p>
-      <a href="mailto:hello@pawsbeyondodds.com" class="btn btn-primary">hello@pawsbeyondodds.com</a>
+      <p>If you have a question, a story, or a product you think belongs here, use the <a href="{{ '/contact/' | url }}">contact page</a>. I read everything, even when replies are slow.</p>
 
     </div>
 
@@ -48,7 +53,7 @@ pageClass: about
       <div class="sidebar-card">
         <div class="sidebar-card-title">Our cats</div>
         {% for cat in cats %}
-        <a href="{{ '/our-cats/#{{ cat.slug }}' | url }}" class="about-cat-row">
+        <a href="{{ '/our-cats/' | url }}#{{ cat.slug }}" class="about-cat-row">
           <span class="about-cat-emoji">{{ cat.emoji }}</span>
           <div>
             <strong>{{ cat.name }}</strong>
